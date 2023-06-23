@@ -11,8 +11,9 @@ class Person < Nameable
     @age = age
     @parent_permission = parent_permission
     @id = Random.rand(1..1000)
+    @rentals=[]
   end
-  attr_accessor :name, :age
+  attr_accessor :name, :age, :rentals
   attr_reader :id
 
   def can_use_services?
@@ -49,10 +50,3 @@ class TrimmerDecorator < Decorator
     input.length <= 10 ? input : input[0..9]
   end
 end
-
-person = Person.new(22, 'maximilianus')
-p person.correct_name
-capitalized_person = CapitalizeDecorator.new(person)
-p capitalized_person.correct_name
-capitalized_trimmed_person = TrimmerDecorator.new(capitalized_person)
-p capitalized_trimmed_person.correct_name
