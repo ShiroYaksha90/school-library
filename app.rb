@@ -38,7 +38,7 @@ class App
 
     case parent_permission
     when 'n'
-      people << Student.new(nil, age, name, false)
+      people << Student.new(nil, age, name, parent_permission: false)
     when 'y'
       people << Student.new(nil, age, name)
     else
