@@ -71,14 +71,6 @@ For more information on the importance of a professional README for your reposit
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-- N/A
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
@@ -120,7 +112,8 @@ Clone this repository to your desired folder:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- **[N/A]**
+- **[Add a mobile version for the app]**
+- **[Add classroom for students]**
 
 
 
