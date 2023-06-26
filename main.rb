@@ -1,5 +1,5 @@
 require_relative 'app'
-
+require_relative 'user_input.rb'
 def options
   p 'Welcome to school library App!'
   p 'Please choose an option by entering a number: ',
@@ -12,33 +12,15 @@ def options
     '7 - Exit'
 end
 
-def selected_option(app, num)
-  case num
-  when '1'
-    app.list_all_books
-  when '2'
-    app.list_people
-  when '3'
-    app.create_person
-  when '4'
-    app.create_book
-  when '5'
-    app.create_rental
-  when '6'
-    app.list_rentals
-  else
-    p 'Invalid option, please try again'
-  end
-end
-
 def main
   app = App.new
+  actions=Input.new
   loop do
     options
     num = gets.chomp
     break if num == '7'
 
-    selected_option(app, num)
+    actions.user_input(app, num)
   end
   p 'Thanks for using the app, goodbye'
 end
